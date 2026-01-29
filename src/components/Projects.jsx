@@ -49,8 +49,8 @@ export default function Projects() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
             {projects.map((p) => {
               const imageUrl =
-                p.image?.[0]?.thumbnails?.medium?.url ||
-                p.image?.[0]?.url ||
+                p.Image?.[0]?.thumbnails?.medium?.url ||
+                p.Image?.[0]?.url ||
                 "";
 
               return (
@@ -64,7 +64,7 @@ export default function Projects() {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   <div className="absolute bottom-0 p-4 opacity-0 group-hover:opacity-100 transition-all">
-                    <h3 className="text-white font-semibold">{p.name}</h3>
+                    <h3 className="text-white font-semibold">{p.Name}</h3>
                   </div>
                 </div>
               );
