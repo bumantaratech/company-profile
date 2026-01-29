@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-display: Inter, system-ui, sans-serif;
+  --font-body: Inter, system-ui, sans-serif;
+
+  /* Colors - Primary scale */
+  --color-primary-50: #e8f1ff;
+  --color-primary-100: #cfe2ff;
+  --color-primary-200: #9fc5ff;
+  --color-primary-300: #6ea8ff;
+  --color-primary-400: #3e8bff;
+  --color-primary-500: #0e6cff;
+  --color-primary-600: #0b56cc;
+  --color-primary-700: #084199;
+  --color-primary-800: #052b66;
+  --color-primary-900: #031633;
+
+  /* Industrial brand tokens */
+  --color-industrial-navy: #0b1f3a;
+  --color-industrial-steel: #2b2f36;
+  --color-industrial-graphite: #1f2329;
+  --color-industrial-yellow: #f5c518;
+  --color-industrial-concrete: #6b7280;
+
+  /* Shadows */
+  --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+
+  /* Backgrounds */
+  --bg-hero-industrial: url("./assets/background.png");
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/************************
+  Base styles (optional)
+*************************/
+
+a {
+  @apply underline-offset-2 decoration-transparent hover:decoration-primary-400 transition;
+}
+
+button {
+  @apply select-none;
+}
