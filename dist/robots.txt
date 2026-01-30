@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bumantaratech.netlify.app/sitemap.xml
